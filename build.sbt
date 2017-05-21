@@ -9,8 +9,6 @@
 
   scalaVersion  in ThisBuild := VScala
 
-  javacOptions in Compile ++= Seq( "-source", "1.8", "-target", "1.8" )
-
   lazy val ScalaCDProject = ( project in file( "." ) )
     .aggregate( `skala-foundation` )
 
